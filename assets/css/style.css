@@ -21,6 +21,14 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--primary-color);
 }
 
+.text-warning {
+    color: var(--accent-color) !important;
+}
+
+.bg-primary {
+    background-color: var(--accent-color) !important;
+}
+
 /* Navbar */
 .navbar {
     background-color: var(--glass-bg);
