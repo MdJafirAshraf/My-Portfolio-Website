@@ -28,13 +28,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item me-4">
-                        <a class="nav-link active" href="index.html">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item me-4">
                         <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item me-4">
-                        <a class="nav-link" href="projects.html">Projects</a>
+                        <a class="nav-link active" href="projects.html">Projects</a>
                     </li>
                     <li class="nav-item me-4">
                         <a class="nav-link" href="contact.html">Contact</a>
@@ -57,188 +57,141 @@
     <!-- Projects Section -->
     <section class="py-5">
         <div class="container py-5">
-            <!-- Service Highlights (Interactive Overview) -->
-            <div class="row g-4 mb-5 pb-5 border-bottom">
-                <div class="col-md-4" data-aos="fade-up">
-                    <div class="p-4 bg-white rounded-4 shadow-sm h-100 border-top border-5 border-primary">
-                        <h3 class="fw-bold mb-3">E-Commerce</h3>
-                        <p class="text-muted small mb-0">High-converting online stores built on Shopify, WooCommerce, or
-                            Custom Stacks.</p>
-                    </div>
+            <!-- Section Header & Filter -->
+            <div class="row align-items-end mb-5" data-aos="fade-up">
+                <div class="col-lg-8">
+                    <h6 class="text-warning fw-bold text-uppercase">My Portfolio</h6>
+                    <h2 class="display-5 fw-bold">Recent Works & Contributions</h2>
+                    <p class="text-muted mb-0">A curated list of commercial success stories and open-source innovations.
+                    </p>
                 </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="p-4 bg-white rounded-4 shadow-sm h-100 border-top border-5 border-warning">
-                        <h3 class="fw-bold mb-3">SaaS Platforms</h3>
-                        <p class="text-muted small mb-0">Scalable cloud-based software solutions with subscription
-                            management.</p>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="p-4 bg-white rounded-4 shadow-sm h-100 border-top border-5 border-success">
-                        <h3 class="fw-bold mb-3">AI Automation</h3>
-                        <p class="text-muted small mb-0">Intelligent workflows and chatbots to automate your business
-                            operations.</p>
+                <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+                    <div class="btn-group filter-buttons" role="group" aria-label="Project Filters">
+                        <button type="button" class="btn btn-outline-dark active" data-filter="all">All
+                            Projects</button>
+                        <button type="button" class="btn btn-outline-dark" data-filter="client">Client Work</button>
+                        <button type="button" class="btn btn-outline-dark" data-filter="opensource">Open Source</button>
                     </div>
                 </div>
             </div>
 
-            <!-- Filter Tabs -->
-            <ul class="nav nav-pills justify-content-center mb-5" id="pills-tab" role="tablist" data-aos="fade-up">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active rounded-pill px-4" id="pills-all-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-all" type="button" role="tab">All Projects</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link rounded-pill px-4" id="pills-web-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-web" type="button" role="tab">E-Commerce</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link rounded-pill px-4" id="pills-ai-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-ai" type="button" role="tab">AI Apps</button>
-                </li>
-            </ul>
+            <!-- Unified Project Grid -->
+            <div class="row g-4 project-grid">
 
-            <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-all" role="tabpanel">
-                    <div class="d-flex justify-content-between align-items-end mb-4">
-                        <h3 class="fw-bold mb-0">Recent Case Studies</h3>
-                        <a href="contact.html" class="btn btn-outline-primary btn-sm">Start Your Project</a>
-                    </div>
-
-                    <div class="row g-4">
-                        <!-- Project 1 -->
-                        <div class="col-lg-12" data-aos="fade-up">
-                            <div class="project-card bg-white rounded-4 shadow-sm overflow-hidden p-0">
-                                <div class="row g-0">
-                                    <div class="col-md-6">
-                                        <img src="https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=800&q=80"
-                                            class="img-fluid h-100 w-100 object-fit-cover" alt="Shop Website"
-                                            style="min-height: 300px;">
-                                    </div>
-                                    <div class="col-md-6 p-4 p-lg-5 d-flex flex-column justify-content-center">
-                                        <div class="mb-3">
-                                            <span
-                                                class="badge bg-success bg-opacity-10 text-success px-3 py-2 rounded-pill mb-2">E-Commerce</span>
-                                            <h4 class="fw-bold">VogueStyle Fashion Hub</h4>
-                                        </div>
-
-                                        <div class="mb-4">
-                                            <h6 class="fw-bold text-dark">The Challenge:</h6>
-                                            <p class="text-muted small">The client needed a scalable platform to handle
-                                                5000+ SKUs and high traffic during flash sales.</p>
-
-                                            <h6 class="fw-bold text-dark mt-3">The Solution:</h6>
-                                            <p class="text-muted small">Built a custom Shopify theme with inventory
-                                                automation and optimized checkout flow.</p>
-
-                                            <h6 class="fw-bold text-dark mt-3">Key Result:</h6>
-                                            <p class="text-primary fw-bold small"><i class="bi bi-graph-up me-2"></i>45%
-                                                Increase in Conversion Rate</p>
-                                        </div>
-
-                                        <div class="d-flex gap-2 flex-wrap">
-                                            <span class="badge bg-light text-secondary border">Shopify</span>
-                                            <span class="badge bg-light text-secondary border">Liquid</span>
-                                            <span class="badge bg-light text-secondary border">JS</span>
-                                        </div>
-                                    </div>
-                                </div>
+                <div class="col-lg-6 col-xl-4 project-item" data-category="client" data-aos="fade-up">
+                    <div
+                        class="card bg-white border-0 shadow-sm p-4 h-100 position-relative overflow-hidden transform-hover">
+                        <div class="d-flex align-items-center mb-4">
+                            <div>
+                                <span class="badge bg-success bg-opacity-10 text-success mb-1">Client Work</span>
+                                <h5 class="fw-bold mb-0">VogueStyle Hub</h5>
                             </div>
                         </div>
-
-                        <!-- Project 2 -->
-                        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                            <div
-                                class="project-card bg-white rounded-4 shadow-sm overflow-hidden h-100 d-flex flex-column">
-                                <div class="position-relative">
-                                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80"
-                                        class="card-img-top" alt="AI App" style="height: 250px; object-fit: cover;">
-                                    <div
-                                        class="position-absolute bottom-0 start-0 bg-white px-3 py-1 rounded-top-end fw-bold text-primary m-0">
-                                        AI Marketing</div>
+                        <p class="text-muted small mb-4">Migrated a boutique fashion brand from WooCommerce to a custom
+                            Shopify solution to handle 5k+ SKUs.</p>
+                        <div class="mt-auto">
+                            <div class="row g-2 mb-3 border-top pt-3">
+                                <div class="col-6">
+                                    <h5 class="fw-bold mb-0 text-success">45%</h5>
+                                    <small class="text-muted">Sales Growth</small>
                                 </div>
-                                <div class="p-4 flex-grow-1">
-                                    <h5 class="fw-bold">ContentGen AI Tool</h5>
-                                    <p class="text-muted small mb-3">An intelligent dashboard that generates
-                                        SEO-optimized blog posts and social media captions in seconds.</p>
-                                    <div class="p-3 bg-light rounded-3 mb-3">
-                                        <div class="d-flex align-items-center mb-2">
-                                            <i class="bi bi-check-circle-fill text-success me-2"></i>
-                                            <small class="fw-bold">OpenAI GPT-4 Integration</small>
-                                        </div>
-                                        <div class="d-flex align-items-center">
-                                            <i class="bi bi-check-circle-fill text-success me-2"></i>
-                                            <small class="fw-bold">Automated Posting</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="p-4 pt-0">
-                                    <a href="contact.html" class="btn btn-light w-100 fw-bold border">View Full
-                                        Details</a>
+                                <div class="col-6">
+                                    <h5 class="fw-bold mb-0 text-success">2.5s</h5>
+                                    <small class="text-muted">Load Time</small>
                                 </div>
                             </div>
-                        </div>
-
-                        <!-- Project 3 -->
-                        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                            <div
-                                class="project-card bg-white rounded-4 shadow-sm overflow-hidden h-100 d-flex flex-column">
-                                <div class="position-relative">
-                                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80"
-                                        class="card-img-top" alt="Custom App" style="height: 250px; object-fit: cover;">
-                                    <div
-                                        class="position-absolute bottom-0 start-0 bg-white px-3 py-1 rounded-top-end fw-bold text-warning m-0">
-                                        SaaS CRM</div>
-                                </div>
-                                <div class="p-4 flex-grow-1">
-                                    <h5 class="fw-bold">TaskMaster Agency CRM</h5>
-                                    <p class="text-muted small mb-3">A centralized hub for digital agencies to manage
-                                        client deliverables, invoices, and automated reporting.</p>
-                                    <div class="p-3 bg-light rounded-3 mb-3">
-                                        <div class="d-flex align-items-center mb-2">
-                                            <i class="bi bi-check-circle-fill text-success me-2"></i>
-                                            <small class="fw-bold">Real-time Dashboard</small>
-                                        </div>
-                                        <div class="d-flex align-items-center">
-                                            <i class="bi bi-check-circle-fill text-success me-2"></i>
-                                            <small class="fw-bold">Stripe Payments</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="p-4 pt-0">
-                                    <a href="contact.html" class="btn btn-light w-100 fw-bold border">View Full
-                                        Details</a>
-                                </div>
-                            </div>
+                            <a href="contact.html" class="btn btn-outline-success btn-sm w-100">Read Case Study</a>
                         </div>
                     </div>
                 </div>
-                <!-- Other tabs would contain filtered content, but for this static demo, All tab is sufficient -->
-                <div class="tab-pane fade" id="pills-web" role="tabpanel">
-                    <div class="text-center py-5">
-                        <p class="text-muted">Displaying Shop & Website Projects...</p>
-                        <!-- Content duplicated or filtered here in real app -->
+
+                <div class="col-lg-6 col-xl-4 project-item" data-category="opensource" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm bg-white p-4 transform-hover">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <span class="badge bg-dark text-white"><i class="bi bi-github me-1"></i>Public</span>
+                        </div>
+                        <h5 class="fw-bold mb-2">react-commerce-kit</h5>
+                        <p class="text-muted small mb-4">A lightweight React component library for building
+                            high-performance e-commerce storefronts.</p>
+                        <div class="mt-auto">
+                            <div class="d-flex gap-3 text-muted small mb-3 border-top pt-3">
+                                <span><i class="bi bi-star-fill text-warning me-1"></i>124 Stars</span>
+                                <span><i class="bi bi-diagram-2 me-1"></i>30 Forks</span>
+                            </div>
+                            <a href="#" class="btn btn-dark btn-sm w-100">View Repository</a>
+                        </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="pills-ai" role="tabpanel">
-                    <div class="text-center py-5">
-                        <p class="text-muted">Displaying AI Application Projects...</p>
+
+                <div class="col-lg-6 col-xl-4 project-item" data-category="client" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div
+                        class="card bg-white border-0 shadow-sm p-4 h-100 position-relative overflow-hidden transform-hover">
+                        <div class="d-flex align-items-center mb-4">
+                            <div>
+                                <span class="badge bg-warning bg-opacity-10 text-warning mb-1">Client Work</span>
+                                <h5 class="fw-bold mb-0">TaskMaster CRM</h5>
+                            </div>
+                        </div>
+                        <p class="text-muted small mb-4">Custom CRM dashboard with automated client reporting,
+                            invoicing, and real-time project tracking.</p>
+                        <div class="mt-auto">
+                            <div class="row g-2 mb-3 border-top pt-3">
+                                <div class="col-6">
+                                    <h5 class="fw-bold mb-0 text-warning">200+</h5>
+                                    <small class="text-muted">Daily Users</small>
+                                </div>
+                                <div class="col-6">
+                                    <h5 class="fw-bold mb-0 text-warning">30hr</h5>
+                                    <small class="text-muted">Saved/Mo</small>
+                                </div>
+                            </div>
+                            <a href="contact.html" class="btn btn-outline-warning text-dark btn-sm w-100">Read Case
+                                Study</a>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const filterButtons = document.querySelectorAll('.filter-buttons button');
+                    const projectItems = document.querySelectorAll('.project-item');
+
+                    filterButtons.forEach(button => {
+                        button.addEventListener('click', () => {
+                            filterButtons.forEach(btn => btn.classList.remove('active'));
+                            button.classList.add('active');
+
+                            const filterValue = button.getAttribute('data-filter');
+
+                            projectItems.forEach(item => {
+                                if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                                    item.style.display = 'block';
+                                } else {
+                                    item.style.display = 'none';
+                                }
+                            });
+                        });
+                    });
+                });
+            </script>
         </div>
     </section>
 
 
 
-    <!-- Footer (Consistent) -->
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row gy-4 border-bottom border-secondary pb-5 mb-4">
                 <div class="col-lg-4 col-md-6">
-                    <h5 class="mb-3">DevPortfolio</h5>
-                    <p class="text-white-50">Professional Full-Stack Developer delivering high-quality web solutions for
-                        businesses worldwide.</p>
+                    <h5 class="mb-3">TownTech</h5>
+                    <p class="text-white-50">
+                        Professional Full-Stack Developer delivering high-quality web
+                        solutions for businesses worldwide.
+                    </p>
                     <div class="social-links mt-4">
                         <a href="#"><i class="bi bi-linkedin"></i></a>
                         <a href="#"><i class="bi bi-github"></i></a>
@@ -249,7 +202,7 @@
                 <div class="col-lg-2 col-md-6">
                     <h5 class="mb-3">Quick Links</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="index.html">Home</a></li>
+                        <li class="mb-2"><a href="/">Home</a></li>
                         <li class="mb-2"><a href="about.html">About</a></li>
                         <li class="mb-2"><a href="projects.html">Projects</a></li>
                         <li class="mb-2"><a href="contact.html">Contact</a></li>
@@ -258,23 +211,29 @@
                 <div class="col-lg-2 col-md-6">
                     <h5 class="mb-3">Services</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#">Web Development</a></li>
-                        <li class="mb-2"><a href="#">App Development</a></li>
-                        <li class="mb-2"><a href="#">AI Solutions</a></li>
-                        <li class="mb-2"><a href="#">E-Commerce</a></li>
+                        <li class="mb-2">Web Development</li>
+                        <li class="mb-2">App Development</li>
+                        <li class="mb-2">AI Solutions</li>
+                        <li class="mb-2">E-Commerce</li>
                     </ul>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <h5 class="mb-3">Contact</h5>
                     <ul class="list-unstyled text-white-50">
-                        <li class="mb-2"><i class="bi bi-geo-alt me-2"></i> 123 Tech Avenue, NY, USA</li>
-                        <li class="mb-2"><i class="bi bi-envelope me-2"></i> contact@devportfolio.com</li>
-                        <li class="mb-2"><i class="bi bi-phone me-2"></i> +1 234 567 8900</li>
+                        <li class="mb-2">
+                            <a href="mailto:mdjafirashraf@gmail.com"><i class="bi bi-envelope me-2"></i>
+                                mdjafirashraf@gmail.com</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="https://wa.me/+919080322687?text=Hi!%20I'd%20like%20to%20request%20a%20quote%20for%20a%20new%20business%20website.%20Please%20let%20me%20know%20what%20information%20you%20need%20from%20my%20side."
+                                target="_blank">
+                                <i class="bi bi-phone me-2"></i> +91 90803 22687</a>
+                        </li>
                     </ul>
                 </div>
             </div>
             <div class="text-center text-white-50 pt-3">
-                <small>&copy; 2024 DevPortfolio. All rights reserved.</small>
+                <small>&copy; 2024 TownTech. All rights reserved.</small>
             </div>
         </div>
     </footer>

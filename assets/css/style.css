@@ -64,6 +64,11 @@ h6 {
   color: var(--accent-color) !important;
 }
 
+#pills-tab li .nav-link.active {
+  color: white !important;
+  background-color: var(--accent-color) !important; 
+}
+
 /* Hero Section */
 .hero-section {
   padding: 100px 0;
