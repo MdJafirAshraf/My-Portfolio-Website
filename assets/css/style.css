@@ -1,214 +1,323 @@
 /* Main CSS File */
 :root {
-    --primary-color: #2c3e50; /* Deep Navy */
-    --secondary-color: #34495e; /* Lighter Navy */
-    --accent-color: #e67e22; /* Vibrant Orange for CTA */
-    --light-bg: #f8f9fa;
-    --text-color: #333;
-    --glass-bg: rgba(255, 255, 255, 0.9);
-    --glass-border: 1px solid rgba(255, 255, 255, 0.3);
+  --primary-color: #2c3e50; /* Deep Navy */
+  --secondary-color: #34495e; /* Lighter Navy */
+  --accent-color: #e67e22; /* Vibrant Orange for CTA */
+  --light-bg: #f8f9fa;
+  --text-color: #333;
+  --glass-bg: rgba(255, 255, 255, 0.9);
+  --glass-border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    color: var(--text-color);
-    line-height: 1.6;
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+  line-height: 1.6;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Outfit', sans-serif;
-    font-weight: 700;
-    color: var(--primary-color);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
 }
 
 .text-warning {
-    color: var(--accent-color) !important;
+  color: var(--accent-color) !important;
 }
 
 .bg-primary {
-    background-color: var(--accent-color) !important;
+  background-color: var(--accent-color) !important;
 }
 
 /* Navbar */
 .navbar {
-    background-color: var(--glass-bg);
-    backdrop-filter: blur(10px);
-    border-bottom: var(--glass-border);
-    transition: all 0.3s ease;
+  background-color: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border-bottom: var(--glass-border);
+  transition: all 0.3s ease;
 }
 
 .navbar-brand {
-    font-weight: 800;
-    color: var(--primary-color) !important;
-    font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--primary-color) !important;
+  font-size: 1.5rem;
 }
 
 .nav-link {
-    font-weight: 500;
-    color: var(--secondary-color) !important;
-    transition: color 0.3s;
+  font-weight: 500;
+  color: var(--secondary-color) !important;
+  transition: color 0.3s;
 }
 
-.nav-link:hover, .nav-link.active {
-    color: var(--accent-color) !important;
+.nav-link:hover,
+.nav-link.active {
+  color: var(--accent-color) !important;
 }
 
 /* Hero Section */
 .hero-section {
-    padding: 100px 0;
-    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
-    position: relative;
-    overflow: hidden;
+  padding: 100px 0;
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  position: relative;
+  overflow: hidden;
 }
 
 .hero-title {
-    font-size: 3.5rem;
-    line-height: 1.2;
-    margin-bottom: 20px;
+  font-size: 3.5rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
 }
 
 .hero-subtitle {
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 30px;
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
 }
 
 .btn-primary {
-    background-color: var(--accent-color);
-    border-color: var(--accent-color);
-    padding: 12px 30px;
-    font-weight: 600;
-    border-radius: 8px;
-    transition: all 0.3s;
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s;
 }
 
 .btn-primary:hover {
-    background-color: #d35400;
-    border-color: #d35400;
-    transform: translateY(-2px);
+  background-color: #d35400;
+  border-color: #d35400;
+  transform: translateY(-2px);
 }
 
 .btn-outline-primary {
-    color: var(--primary-color);
-    border-color: var(--primary-color);
-    padding: 12px 30px;
-    font-weight: 600;
-    border-radius: 8px;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 8px;
 }
 
 .btn-outline-primary:hover {
-    background-color: var(--primary-color);
-    color: #fff;
+  background-color: var(--primary-color);
+  color: #fff;
 }
 
 /* Cards & Services */
 .service-card {
-    background: white;
-    border: none;
-    border-radius: 12px;
-    padding: 30px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-    transition: transform 0.3s, box-shadow 0.3s;
-    height: 100%;
+  background: white;
+  border: none;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 100%;
 }
 
 .service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
 }
 
 .icon-box {
-    width: 60px;
-    height: 60px;
-    background: var(--light-bg);
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-    font-size: 1.5rem;
-    color: var(--accent-color);
+  width: 60px;
+  height: 60px;
+  background: var(--light-bg);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: var(--accent-color);
 }
 
 /* Feature Icons (Fixed Circles) */
 .feature-icon {
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50% !important; /* Force circle */
-    flex-shrink: 0; /* Prevent shrinking in flex container */
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50% !important; /* Force circle */
+  flex-shrink: 0; /* Prevent shrinking in flex container */
 }
 
 /* Custom Primary BG */
 .bg-theme-primary {
-    background-color: var(--primary-color) !important;
+  background-color: var(--primary-color) !important;
 }
 
 /* About Section */
 .profile-img-container {
-    position: relative;
-    padding: 20px;
+  position: relative;
+  padding: 20px;
 }
 
 .profile-img {
-    border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 .timeline-item {
-    border-left: 2px solid var(--accent-color);
-    padding-left: 20px;
-    margin-bottom: 30px;
-    position: relative;
+  border-left: 2px solid var(--accent-color);
+  padding-left: 20px;
+  margin-bottom: 30px;
+  position: relative;
 }
 
 .timeline-item::before {
-    content: '';
-    width: 12px;
-    height: 12px;
-    background: var(--accent-color);
-    border-radius: 50%;
-    position: absolute;
-    left: -7px;
-    top: 5px;
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: var(--accent-color);
+  border-radius: 50%;
+  position: absolute;
+  left: -7px;
+  top: 5px;
 }
 
 /* Footer */
 footer {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 50px 0 20px;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 50px 0 20px;
 }
 
 footer h5 {
-    color: white;
+  color: white;
 }
 
 footer a {
-    color: rgba(255,255,255,0.7);
-    text-decoration: none;
-    transition: color 0.3s;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
 footer a:hover {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .social-links a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    background: rgba(255,255,255,0.1);
-    border-radius: 50%;
-    margin-right: 10px;
-    transition: background 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: background 0.3s;
 }
 
 .social-links a:hover {
-    background: var(--accent-color);
-    color: white;
+  background: var(--accent-color);
+  color: white;
+}
+
+/* Brand Carousel (Infinite Marquee) */
+.brand-section {
+  overflow: hidden;
+  background: white;
+  padding: 40px 0;
+  white-space: nowrap;
+  position: relative;
+}
+
+.brand-track {
+  display: inline-block;
+  animation: slide-brands 20s linear infinite;
+}
+
+.brand-section:hover .brand-track {
+  animation-play-state: paused;
+}
+
+.brand-item {
+  display: inline-block;
+  margin: 0 40px;
+  opacity: 0.5;
+  transition: opacity 0.3s, transform 0.3s;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.brand-item:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.brand-item img {
+  height: 40px;
+  width: auto;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+.brand-item:hover img {
+  filter: grayscale(0%);
+}
+
+@keyframes slide-brands {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Skill Badges */
+.skill-badge {
+  background: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  cursor: default;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.skill-badge:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  background: var(--primary-color);
+  color: white !important;
+}
+
+.skill-badge:hover i {
+  color: white !important;
+}
+
+/* Skill Card */
+.skill-card-container {
+  transition: transform 0.3s;
+}
+
+.skill-card-container:hover {
+  transform: translateY(-5px);
+}
+
+/* Interactive Hover Utility */
+.transform-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.transform-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.object-fit-cover {
+  object-fit: cover;
 }
