@@ -78,16 +78,24 @@
             <!-- Unified Project Grid -->
             <div class="row g-4 project-grid">
 
-                <div class="col-lg-6 col-xl-4 project-item" data-category="client" data-aos="fade-up">
+                <div class="col-lg-6 col-xl-4 project-item" data-category="client" data-date="2025-12-09"
+                    data-aos="fade-up">
                     <div
                         class="card bg-white border-0 shadow-lg p-4 h-100 position-relative overflow-hidden transform-hover">
+                        <div class="position-absolute top-0 end-0 p-3">
+                            <span class="badge bg-light text-dark shadow-sm project-date" data-bs-toggle="tooltip"
+                                data-bs-placement="top">
+                                <i class="bi bi-clock me-1"></i>Loading...
+                            </span>
+                        </div>
                         <div class="d-flex align-items-center mb-4">
                             <div>
                                 <span class="badge bg-warning bg-opacity-10 text-warning mb-1">Client Work</span>
                                 <h5 class="fw-bold mb-0">King Fitness Gym</h5>
                             </div>
                         </div>
-                        <p class="text-muted small mb-4">A fitness gym website with a modern and user-friendly design.</p>
+                        <p class="text-muted small mb-4">A fitness gym website with a modern and user-friendly design.
+                        </p>
                         <div class="mt-auto">
                             <div class="row g-2 mb-3 border-top pt-3">
                                 <div class="col-6">
@@ -99,46 +107,62 @@
                                     <small class="text-muted">Load Time</small>
                                 </div>
                             </div>
-                            <a href="contact.html" class="btn btn-outline-warning btn-sm w-100">Read Case Study</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-6 col-xl-4 project-item" data-category="opensource" data-aos="fade-up"
-                    data-aos-delay="100">
+                <div class="col-lg-6 col-xl-4 project-item" data-category="opensource" data-date="2025-11-15"
+                    data-aos="fade-up" data-aos-delay="100">
                     <div class="card h-100 border-0 shadow-lg p-4 transform-hover">
+                        <div class="position-absolute top-0 end-0 p-3">
+                            <span class="badge bg-light text-dark shadow-sm project-date" data-bs-toggle="tooltip"
+                                data-bs-placement="top">
+                                <i class="bi bi-clock me-1"></i>Loading...
+                            </span>
+                        </div>
                         <div class="d-flex justify-content-between align-items-start mb-3">
                             <span class="badge bg-dark text-white"><i class="bi bi-github me-1"></i>Public</span>
                         </div>
                         <h5 class="fw-bold mb-2">AI Document chat using Local Rag</h5>
                         <p class="text-muted small mb-4">
-                            A local RAG-based chat application that utilizes Large Language Models to enable private, interactive conversations with your personal documents.
+                            A local RAG-based chat application that utilizes Large Language Models to enable private,
+                            interactive conversations with your personal documents.
                         </p>
                         <div class="mt-auto">
                             <div class="d-flex gap-3 text-muted small mb-3 border-top pt-3">
                                 <span><i class="bi bi-star-fill text-warning me-1"></i>0 Stars</span>
                                 <span><i class="bi bi-diagram-2 text-warning me-1"></i>0 Forks</span>
                             </div>
-                            <a href="https://github.com/MdJafirAshraf/ai-document-chat-application-using-local-llm-and-rag" class="btn btn-outline-dark btn-sm w-100">View Repository</a>
+                            <a href="https://github.com/MdJafirAshraf/ai-document-chat-application-using-local-llm-and-rag"
+                                class="btn btn-outline-dark btn-sm w-100">View Repository</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-xl-4 project-item" data-category="opensource" data-aos="fade-up"
-                    data-aos-delay="100">
+
+                <div class="col-lg-6 col-xl-4 project-item" data-category="opensource" data-date="2025-10-20"
+                    data-aos="fade-up" data-aos-delay="100">
                     <div class="card h-100 border-0 shadow-lg p-4 transform-hover">
+                        <div class="position-absolute top-0 end-0 p-3">
+                            <span class="badge bg-light text-dark shadow-sm project-date" data-bs-toggle="tooltip"
+                                data-bs-placement="top">
+                                <i class="bi bi-clock me-1"></i>Loading...
+                            </span>
+                        </div>
                         <div class="d-flex justify-content-between align-items-start mb-3">
                             <span class="badge bg-dark text-white"><i class="bi bi-github me-1"></i>Public</span>
                         </div>
                         <h5 class="fw-bold mb-2">Login and Registration System using Flask and MongoDB</h5>
                         <p class="text-muted small mb-4">
-                            A simple Python Flask web application integrating MongoDB to demonstrate user authentication and real-time database management.
+                            A simple Python Flask web application integrating MongoDB to demonstrate user authentication
+                            and real-time database management.
                         </p>
                         <div class="mt-auto">
                             <div class="d-flex gap-3 text-muted small mb-3 border-top pt-3">
                                 <span><i class="bi bi-star-fill text-warning me-1"></i>6 Stars</span>
                                 <span><i class="bi bi-diagram-2 text-warning me-1"></i>3 Forks</span>
                             </div>
-                            <a href="https://github.com/MdJafirAshraf/login-and-registration-system-using-flask-mongodb" class="btn btn-outline-dark btn-sm w-100">View Repository</a>
+                            <a href="https://github.com/MdJafirAshraf/login-and-registration-system-using-flask-mongodb"
+                                class="btn btn-outline-dark btn-sm w-100">View Repository</a>
                         </div>
                     </div>
                 </div>
@@ -146,8 +170,59 @@
 
             <script>
                 document.addEventListener('DOMContentLoaded', function () {
-                    const filterButtons = document.querySelectorAll('.filter-buttons button');
+
+                    // Date Logic
+                    function formatTimeAgo(dateString) {
+                        const date = new Date(dateString);
+                        const now = new Date();
+                        const diffInSeconds = Math.floor((now - date) / 1000);
+
+                        const intervals = {
+                            year: 31536000,
+                            month: 2592000,
+                            week: 604800,
+                            day: 86400,
+                            hour: 3600,
+                            minute: 60
+                        };
+
+                        for (const [unit, seconds] of Object.entries(intervals)) {
+                            const interval = Math.floor(diffInSeconds / seconds);
+                            if (interval >= 1) {
+                                return `${interval} ${unit}${interval > 1 ? 's' : ''} ago`;
+                            }
+                        }
+                        return 'Just now';
+                    }
+
                     const projectItems = document.querySelectorAll('.project-item');
+                    projectItems.forEach(item => {
+                        const dateStr = item.getAttribute('data-date');
+                        if (dateStr) {
+                            const dateSpan = item.querySelector('.project-date');
+                            if (dateSpan) {
+                                // Keep the icon
+                                const icon = dateSpan.querySelector('i');
+                                dateSpan.textContent = ' ' + formatTimeAgo(dateStr);
+                                if (icon) dateSpan.prepend(icon);
+
+                                const fullDate = new Date(dateStr).toLocaleDateString('en-US', {
+                                    weekday: 'long',
+                                    year: 'numeric',
+                                    month: 'long',
+                                    day: 'numeric'
+                                });
+                                dateSpan.setAttribute('data-bs-title', fullDate);
+                            }
+                        }
+                    });
+
+                    // Initialize Tooltips
+                    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+                    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+
+                    const filterButtons = document.querySelectorAll('.filter-buttons button');
+                    // const projectItems is already defined above
 
                     filterButtons.forEach(button => {
                         button.addEventListener('click', () => {
