@@ -1,3 +1,164 @@
+.business-solutions .service-tag {
+  background: #d6fbeb;
+  color: #229954;
+  border: none;
+}
+/* Modern Services Cards Section */
+.services-cards-row {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.service-card-modern {
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(44, 62, 80, 0.07);
+  min-width: 270px;
+  max-width: 320px;
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+  overflow: hidden;
+  border: 6px solid rgba(255,255,255,0.9);
+}
+
+.service-card-modern:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 48px rgba(44, 62, 80, 0.12);
+}
+
+/* Card color accents */
+.service-card-modern.web-design .service-card-header,
+.service-card-modern.web-design .service-card-body {
+  background: #eaf6fd;
+}
+.service-card-modern.ai-apps .service-card-header,
+.service-card-modern.ai-apps .service-card-body {
+  background: #fdf2e9;
+}
+.service-card-modern.custom-apps .service-card-header,
+.service-card-modern.custom-apps .service-card-body {
+  background: #f3eafd;
+}
+.service-card-modern.business-solutions .service-card-header,
+.service-card-modern.business-solutions .service-card-body {
+  background: #e9fdf3;
+}
+
+.service-card-header {
+  margin: 0;
+  padding: 1.25rem 1.4rem 0.6rem 1.4rem;
+  border-radius: 14px 14px 0 0;
+}
+.service-card-header,
+.service-card-body {
+  box-sizing: border-box;
+}
+.service-card-header {
+  /* make header uniform height across cards */
+  min-height: 96px;
+  display: flex;
+  align-items: flex-start;
+}
+.service-title {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: #0f1720;
+}
+.service-card-body {
+  padding: 0 1.4rem 1.2rem 1.4rem;
+}
+.service-card-body p {
+  color: #3b3b3b;
+  font-size: 0.98rem;
+  margin: 0 0 0.85rem 0;
+}
+.service-card-body {
+  /* make body uniform height across cards so top colored area aligns */
+  min-height: 122px;
+}
+.service-card-body {
+  /* round only the bottom corners of the colored area */
+  border-radius: 0 0 14px 14px;
+}
+.service-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+.service-tag {
+  background: rgba(255,255,255,0.75);
+  border-radius: 16px;
+  padding: 0.35em 0.9em;
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #222;
+  box-shadow: 0 8px 18px rgba(14,30,37,0.04), inset 0 -6px 10px rgba(0,0,0,0.02);
+  border: 1px solid rgba(0,0,0,0.04);
+}
+.web-design .service-tag {
+  background: rgba(255,255,255,0.75);
+  color: #1b4965;
+}
+.ai-apps .service-tag {
+  background: rgba(255,255,255,0.75);
+  color: #b85a13;
+}
+.custom-apps .service-tag {
+  background: rgba(255,255,255,0.75);
+  color: #6b2e77;
+}
+.service-card-footer {
+  background: #ffffff;
+  padding: 1.15rem 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.service-explore {
+  font-weight: 700;
+  color: #0f1720;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.service-explore:hover {
+  color: var(--accent-color);
+}
+.arrow {
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid rgba(15,23,32,0.06);
+  box-shadow: 0 6px 16px rgba(14,30,37,0.04);
+  transition: transform 0.18s, background 0.18s;
+}
+.service-explore:hover .arrow {
+  transform: translateX(6px);
+}
+/* Responsive adjustments: reduce top-area heights on small screens */
+@media (max-width: 576px) {
+  .service-card-header {
+    min-height: 72px;
+    padding: 0.9rem 1rem 0.4rem 1rem;
+    align-items: flex-start;
+  }
+  .service-card-body {
+    min-height: 90px;
+    padding: 0 1rem 0.9rem 1rem;
+  }
+  .service-card-modern {
+    max-width: 100%;
+  }
+}
 /* Main CSS File */
 :root {
   --primary-color: #2c3e50; /* Deep Navy */
